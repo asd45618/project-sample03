@@ -215,7 +215,7 @@ img {
   width: 50%;
 }
 
-#section .goodsInfo .videoBox > video {
+#section .goodsInfo .videoBox > iframe {
   width: 100%;
 }
 
