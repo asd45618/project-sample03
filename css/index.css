@@ -59,7 +59,7 @@ img {
 }
 
 #header .nav .depth1 > li {
-  width: 160px;
+  /* width: 160px; */
   float: left;
   font-family: "Noto Sans KR";
   font-weight: 400;
@@ -69,16 +69,17 @@ img {
 
 #header .nav li > a {
   display: block;
-  height: 100px;
-  line-height: 100px;
+  height: 90px;
+  line-height: 90px;
+  padding: 0 30px 20px;
+  margin-top: 5px;
 }
 
 #header .nav .depth2 {
   position: absolute;
   top: 100%;
   left: 0;
-  transform: translate(-15%, 0);
-  width: 220px;
+  width: 100%;
   font-family: "Noto Sans KR";
   font-weight: 500;
   font-size: 13px;
@@ -171,6 +172,15 @@ img {
   float: left;
   width: 33.33%;
   margin: 0 auto;
+}
+
+#section .introduction .row .photo ul li > a > img {
+  transition: all 2s;
+}
+
+#section .introduction .row .photo ul li > a > img:hover {
+  transform: scale(0.99);
+  opacity: 0.6;
 }
 
 #section .introduction .row .photo .text {
