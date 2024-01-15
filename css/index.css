@@ -98,6 +98,7 @@ img {
   line-height: 45px;
   transition: 300ms ease-out 0ms;
   border-top: 1px solid #fff;
+  margin: 0;
 }
 
 #header .nav .depth2 > li > a:hover {
