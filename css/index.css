@@ -51,7 +51,7 @@ img {
 
 #header h1 {
   float: left;
-  padding: 18px 0;
+  padding: 13px 0 0;
 }
 
 #header .nav {
@@ -71,7 +71,7 @@ img {
   display: block;
   height: 90px;
   line-height: 90px;
-  padding: 5px 30px 20px;
+  padding: 0 30px;
 }
 
 #header .nav .depth2 {
@@ -107,10 +107,75 @@ img {
 
 /* ===================== section > slideOuter > slideInner > slide ===================== */
 
-#section .slide {
-  background: url(../images/main01.jpg) no-repeat center / cover;
-  height: 95vh;
+#section .slideOuter .slideInner .slick-arrow {
+  position: absolute;
+  top: 50%;
+  border: none;
+  background: none;
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#section .slideOuter .slideInner .slick-next {
+  right: 50px;
+}
+
+#section .slideOuter .slideInner .slick-prev {
+  left: 50px;
+  z-index: 999;
+}
+
+#section .slideOuter .slideInner {
   position: relative;
+}
+
+#section .slideOuter .slideInner .slick-dots {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 20px;
+}
+
+#section .slideOuter .slideInner .slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+#section .slideOuter .slideInner .slick-dots .slick-active button {
+  background: rgba(255, 255, 255, 1);
+}
+
+#section .slideOuter .slideInner .slick-dots li button {
+  width: 9px;
+  height: 9px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  border: none;
+  text-indent: 100px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#section .slide {
+  position: relative;
+  height: 700px;
+}
+
+#section .slide1 {
+  background: url(../images/main01.jpg) no-repeat center / cover;
+}
+
+#section .slide2 {
+  background: url(../images/main02.jpg) no-repeat center / cover;
+}
+
+#section .slide3 {
+  background: url(../images/main03.jpg) no-repeat center / cover;
+}
+
+#section .slide4 {
+  background: url(../images/main04.jpg) no-repeat center / cover;
 }
 
 #section .slide .text {
