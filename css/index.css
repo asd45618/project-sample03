@@ -157,6 +157,19 @@ img {
   cursor: pointer;
 }
 
+#section .slideOuter {
+  position: relative;
+}
+
+#section .slideOuter .plapau {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  color: #fff;
+  font-size: 14px;
+  margin-left: 50px;
+}
+
 #section .slide {
   position: relative;
   height: 700px;
@@ -192,6 +205,12 @@ img {
   font-size: 40px;
   font-weight: 700;
   text-shadow: 1px 1px 1px #444;
+  opacity: 0;
+  transform: translate3d(0, 100%, 0);
+}
+
+#section .slick-current.slick-active .text h2 {
+  animation: fadeInUp 1s 1 both 0.3s;
 }
 
 #section .slide .text p {
@@ -199,6 +218,12 @@ img {
   font-size: 18px;
   font-weight: 600;
   text-shadow: 1px 1px 1px #444;
+  opacity: 0;
+  transform: translate3d(0, 100%, 0);
+}
+
+#section .slick-current.slick-active .text p {
+  animation: fadeInUp 1s 1 both 1.3s;
 }
 
 /* ===================== section > introduction===================== */

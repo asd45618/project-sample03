@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>sample3</title>
-    <link rel="stylesheet" href="./css/index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -17,6 +16,9 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
       integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
@@ -119,6 +121,9 @@
               </p>
             </div>
           </div>
+        </div>
+        <div class="plapau">
+          <i class="fa-solid fa-pause"></i>
         </div>
       </div>
       <div class="introduction">
@@ -399,6 +404,20 @@
           '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"><i class="fa-solid fa-chevron-left"></i></button>',
         nextArrow:
           '<button class="slick-next slick-arrow" aria-label="Next" type="button"><i class="fa-solid fa-chevron-right"></i></button>',
+      });
+
+      $(".slideOuter .plapau i").on("click", function () {
+        if ($(this).hasClass("fa-pause")) {
+          $(".slideInner").slick("slickPause");
+          $(".slideOuter .plapau i")
+            .removeClass("fa-pause")
+            .addClass("fa-play");
+        } else {
+          $(".slideInner").slick("slickPlay");
+          $(".slideOuter .plapau i")
+            .removeClass("fa-play")
+            .addClass("fa-pause");
+        }
       });
     </script>
   </body>
