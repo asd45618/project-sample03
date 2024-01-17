@@ -1,0 +1,105 @@
+@media screen and (max-width: 1200px) {
+  .headerRow {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #header {
+    position: static;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    background-color: #fff;
+    text-align: left;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 0;
+  }
+
+  #header h1 {
+    float: left;
+    padding: 0 5%;
+    width: 100%;
+  }
+
+  #header .menuOpen {
+    display: none;
+    float: right;
+    height: 78px;
+    line-height: 78px;
+    cursor: pointer;
+  }
+
+  #header .nav {
+    float: left;
+    display: block;
+    width: 100%;
+  }
+
+  /* #header .depth1 {
+  } */
+
+  #header .nav .depth1 > li {
+    width: 100%;
+    float: left;
+    font-family: "Noto Sans KR";
+    font-weight: 400;
+    font-size: 18px;
+    position: relative;
+  }
+
+  #header .nav li > a {
+    display: block;
+    height: 100%;
+    line-height: 30px;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    text-align: left;
+    border-bottom: 1px solid rgba(132, 132, 132, 0.15);
+  }
+
+  #header .nav .depth1 > li > a:hover {
+    background: #000;
+    color: #fff;
+  }
+
+  #header .nav .depth2 {
+    position: static;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    font-family: "Noto Sans KR";
+    font-weight: 500;
+    font-size: 13px;
+    color: #222;
+    background: #fff;
+    display: block;
+  }
+
+  #header .nav .depth1 > li:hover .depth2 {
+    display: block;
+  }
+
+  #header .nav .depth2 > li {
+    border-bottom: 1px solid rgba(132, 132, 132, 0.15);
+  }
+
+  #header .nav .depth2 > li > a {
+    display: block;
+    height: 100%;
+    line-height: 30px;
+    transition: 300ms ease-out 0ms;
+    border-top: 0px solid #fff;
+    margin: 0;
+  }
+
+  #header .nav .depth2 > li > a:hover {
+    background: #000;
+    color: #fff;
+  }
+}
