@@ -151,6 +151,10 @@
     width: 100%;
   }
 
+  #section .goodsInfo .videoBox > iframe {
+    height: 60vw;
+  }
+
   #section .goodsInfo .goodsExplantion {
     float: left;
     width: 100%;
@@ -221,6 +225,17 @@
   }
 
   /* service */
+  #section .service {
+    background: url(../images/banner04.jpg) right center / cover;
+    text-align: center;
+    width: 100%;
+    height: 580px;
+    font-family: "Noto Sans KR";
+    font-weight: 400;
+    color: #333;
+    letter-spacing: -1px;
+  }
+
   #section .service div.text1 {
     font-size: 28px;
     line-height: 50px;
@@ -335,6 +350,14 @@
     padding: 10px;
     display: block;
     text-align: center;
+  }
+
+  #footer span {
+    display: block;
+  }
+
+  #footer span.slash {
+    display: none;
   }
 
   #footer .companyAddr .sns {
