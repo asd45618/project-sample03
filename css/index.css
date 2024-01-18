@@ -327,6 +327,7 @@ img {
 
 #section .goodsInfo .videoBox > iframe {
   width: 100%;
+  height: 30vw;
 }
 
 #section .goodsInfo .goodsExplantion {
